@@ -3,6 +3,24 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message-container {
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.form-container {
+  border: 1px solid blue;
+  padding: 20px;
+}
+
+.form-container > form > p {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
 }

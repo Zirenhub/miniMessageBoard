@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(class='form-container')
+    form(action='/new' method='POST')
+      p
+        | name: 
+        input(name='name', value='', type='text')
+        | message: 
+        input(name='message', value='', type='text')
+      input(value='Submit', type='submit')
